@@ -1,0 +1,9 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+a.button {
+  padding: 10px 25px;
+  text-transform: uppercase;
+}

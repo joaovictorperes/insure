@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
+}
+
+.header-nav-items {
+  display: flex;
+  gap: 30px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.header-nav-items a {
+  display: inline-block;
+  padding: 10px 0px;
+}
+
+.header-nav-items a:not(.button):hover {
+  color: var(--color-1);
+}
+
+.button {
+  background-color: var(--color-1);
+  color: var(--color-3);
+}
