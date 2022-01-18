@@ -21,7 +21,7 @@
   color: var(--color-1);
 }
 
-.button {
+.header-nav .button {
   background-color: var(--color-1);
   color: var(--color-3);
 }

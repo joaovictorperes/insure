@@ -1,12 +1,15 @@
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 140px;
+  padding-right: 140px;
 }
 
 a.button {
   padding: 10px 25px;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
   display: inline-block;
+  max-width: max-content;
+  font: 700 1rem/1.5 "Karla", sans-serif;
 }
