@@ -2,8 +2,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 100px;
+  padding: 20px 100px;
 }
+
+/* .header::after {
+  content: "";
+  position: absolute;
+  background-image: url(../../images/bg-pattern-intro-right-desktop.svg);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: top right;
+  top: 0px;
+  right: 0px;
+} */
 
 .header-nav-items {
   display: flex;
@@ -22,6 +34,6 @@
 }
 
 .header-nav .button {
-  background-color: var(--color-1);
-  color: var(--color-3);
+  color: var(--color-1);
+  border: 3px solid var(--color-1);
 }

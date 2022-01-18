@@ -8,8 +8,10 @@ h1,
 h2,
 h3,
 p,
-ul {
+ul,
+li {
   margin: 0px;
+  padding: 0px;
 }
 
 ul {
