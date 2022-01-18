@@ -1,5 +1,6 @@
 /*Home*/
 @import "./global/header.css";
+@import "./home/introduction.css";
 
 /*Global*/
 @import "./global/global.css";
