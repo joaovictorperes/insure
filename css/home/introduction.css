@@ -11,12 +11,8 @@
   display: grid;
   align-content: flex-start;
   gap: 30px;
-  padding-top: 60px;
+  padding-top: 50px;
   position: relative;
-}
-
-.introduction-grid h1 {
-  font-size: 4rem;
 }
 
 .introduction-grid h1::before {
@@ -31,4 +27,50 @@
 .introduction-grid a.button {
   color: var(--color-p1);
   background-color: var(--color-3);
+}
+
+.introduction-information {
+  display: grid;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+  gap: 60px;
+}
+
+.introduction-information h1 {
+  color: var(--color-1);
+}
+
+.introduction-information h1::before {
+  content: "";
+  width: 140px;
+  height: 1px;
+  background-color: var(--color-2);
+  position: absolute;
+  top: 0px;
+}
+
+.information-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.information-grid img {
+  width: 80px;
+  height: 80px;
+}
+
+.information-items {
+  display: grid;
+  max-width: 45ch;
+  height: max-content;
+  gap: 20px;
+}
+
+.introduction-about {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0px;
+  background-color: var(--color-p1);
 }
