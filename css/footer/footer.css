@@ -1,5 +1,31 @@
-.footer-grid {
+.footer-contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-media {
+  display: flex;
+}
+
+.footer {
   background-color: rgb(241, 241, 241);
+}
+
+.footer-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  text-transform: uppercase;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-information {
+  display: grid;
+  gap: 30px;
+  height: max-content;
+}
+
+.footer-information li + li {
+  margin-top: 10px;
 }
