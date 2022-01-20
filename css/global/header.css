@@ -29,11 +29,6 @@
   padding: 10px 0px;
 }
 
-.header-nav-items a:hover {
-  color: var(--color-3);
-  background-color: var(--color-1);
-}
-
 .header-nav-items a:not(.button):hover {
   color: var(--color-1);
 }
@@ -41,4 +36,9 @@
 .header-nav .button {
   color: var(--color-1);
   border: 3px solid var(--color-1);
+}
+
+.header-nav .button:hover {
+  color: var(--color-3);
+  background-color: var(--color-1);
 }
