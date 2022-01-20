@@ -9,3 +9,6 @@
 @import "./utility/typography.css";
 @import "./utility/colors.css";
 @import "./utility/components.css";
+
+/*Footer*/
+@import "./footer/footer.css";

@@ -102,12 +102,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 60px 80px;
-  background-color: var(--color-p1);
+  padding: 70px 80px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  background: var(--color-p1)
+    url(../../images/bg-pattern-how-we-work-desktop.svg) no-repeat top right;
+  background-size: contain;
 }
 
 .introduction-about h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .introduction-about a.button {
