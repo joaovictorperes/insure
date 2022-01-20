@@ -29,6 +29,11 @@
   padding: 10px 0px;
 }
 
+.header-nav-items a:hover {
+  color: var(--color-3);
+  background-color: var(--color-1);
+}
+
 .header-nav-items a:not(.button):hover {
   color: var(--color-1);
 }

@@ -29,6 +29,11 @@
   border: 3px solid var(--color-3);
 }
 
+.introduction-grid a.button:hover {
+  color: var(--color-1);
+  background-color: var(--color-3);
+}
+
 .introduction-information {
   display: grid;
   padding-top: 50px;
@@ -83,4 +88,9 @@
 .introduction-about a.button {
   color: var(--color-3);
   border: 3px solid var(--color-3);
+}
+
+.introduction-about a.button:hover {
+  color: var(--color-1);
+  background-color: var(--color-3);
 }
