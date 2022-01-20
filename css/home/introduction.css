@@ -5,6 +5,31 @@
   padding: 80px 0px;
   background-color: var(--color-p1);
   box-shadow: inset 0px -250px var(--color-3);
+  position: relative;
+}
+
+.introduction-content::before {
+  content: "";
+  position: absolute;
+  background: url(../../images/bg-pattern-intro-right-desktop.svg) no-repeat top -80px
+    right;
+  background-size: contain;
+  right: 0px;
+  top: 0px;
+  width: 40%;
+  height: 70%;
+}
+
+.introduction-content::after {
+  content: "";
+  position: absolute;
+  background: url(../../images/bg-pattern-intro-left-desktop.svg) no-repeat
+    bottom left;
+  background-size: contain;
+  left: 0px;
+  bottom: -20px;
+  width: 13%;
+  height: 100%;
 }
 
 .introduction-grid {
