@@ -1,10 +1,18 @@
 .footer-contact {
   display: flex;
   justify-content: space-between;
+  padding-top: 60px;
+  padding-bottom: 40px;
 }
 
 .social-media {
   display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-media svg:hover path {
+  fill: var(--color-1);
 }
 
 .footer {
@@ -16,7 +24,7 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   text-transform: uppercase;
-  padding-top: 60px;
+  padding-top: 40px;
   padding-bottom: 60px;
 }
 
@@ -26,6 +34,14 @@
   height: max-content;
 }
 
+.footer-information li {
+  width: max-content;
+}
+
 .footer-information li + li {
   margin-top: 10px;
+}
+
+.footer-information li:hover {
+  text-decoration: underline;
 }
