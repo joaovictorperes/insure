@@ -45,3 +45,16 @@
 .footer-information li:hover {
   text-decoration: underline;
 }
+
+.attribution p {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.attribution a {
+  color: rgb(56, 56, 207);
+}
+
+.attribution a:hover {
+  color: rgb(41, 41, 94);
+}
