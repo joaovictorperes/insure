@@ -13,3 +13,11 @@ a.button {
   max-width: max-content;
   font: 700 1rem/1.5 "Karla", sans-serif;
 }
+
+@media (max-width: 1250px) {
+  .container {
+    margin: 0 auto;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}

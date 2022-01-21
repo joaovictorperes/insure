@@ -52,6 +52,7 @@
 .introduction-grid a.button {
   color: var(--color-3);
   border: 3px solid var(--color-3);
+  transition: 0.3s;
 }
 
 .introduction-grid a.button:hover {
@@ -118,6 +119,7 @@
 .introduction-about a.button {
   color: var(--color-3);
   border: 3px solid var(--color-3);
+  transition: 0.3s;
 }
 
 .introduction-about a.button:hover {

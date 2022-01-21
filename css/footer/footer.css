@@ -1,3 +1,21 @@
+.footer {
+  background: rgb(241, 241, 241);
+  position: relative;
+  z-index: 1;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  background: url(../../images/bg-pattern-footer-desktop.svg) no-repeat top left;
+  background-size: contain;
+  width: 40%;
+  height: 55%;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
 .footer-contact {
   display: flex;
   justify-content: space-between;
@@ -13,10 +31,6 @@
 
 .social-media svg:hover path {
   fill: var(--color-1);
-}
-
-.footer {
-  background-color: rgb(241, 241, 241);
 }
 
 .footer-grid {
@@ -44,6 +58,10 @@
 
 .footer-information li:hover {
   text-decoration: underline;
+}
+
+hr {
+  border: 0.1px solid rgb(214, 212, 212);
 }
 
 .attribution p {
