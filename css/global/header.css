@@ -34,8 +34,54 @@
 
 .btn-mobile {
   display: none;
+  cursor: pointer;
 }
-/* 
-@media (max-width: 1250px) {
 
-} */
+@media (max-width: 1250px) {
+  .btn-mobile {
+    display: block;
+  }
+
+  .header-nav-items {
+    /* display: none; */
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    top: 72px;
+    right: 0px;
+    background: var(--color-1);
+    padding: 20px;
+    height: 100vh;
+    z-index: 10;
+  }
+
+  .header-nav-items li {
+    text-align: center;
+  }
+
+  .header-nav-items a {
+    color: var(--color-3);
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .header-nav-items a:not(.button):hover {
+    color: var(--color-2);
+  }
+
+  .header-nav.active .header-nav-items {
+    display: flex;
+  }
+
+  .header-nav .button {
+    color: var(--color-3);
+    border: 3px solid var(--color-3);
+    transition: 0.3s;
+  }
+
+  .header-nav .button:hover {
+    color: var(--color-1);
+    background-color: var(--color-3);
+  }
+}
