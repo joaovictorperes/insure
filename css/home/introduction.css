@@ -101,6 +101,7 @@
 
 .introduction-about {
   display: flex;
+  gap: 20px;
   justify-content: space-between;
   align-items: center;
   padding: 70px 80px;
@@ -156,7 +157,12 @@
     gap: 20px;
   }
 
-  .introduction-grid h1 {
+  .introduction-grid h1,
+  .introduction-information h1 {
     font-size: 3rem;
+  }
+
+  .introduction-about h2 {
+    font-size: 2rem;
   }
 }
