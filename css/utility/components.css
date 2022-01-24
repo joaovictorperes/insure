@@ -16,8 +16,14 @@ a.button {
 
 @media (max-width: 1250px) {
   .container {
-    margin: 0 auto;
     padding-left: 80px;
     padding-right: 80px;
+  }
+}
+
+@media (max-width: 920px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }

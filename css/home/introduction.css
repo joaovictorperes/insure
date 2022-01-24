@@ -126,3 +126,37 @@
   color: var(--color-1);
   background-color: var(--color-3);
 }
+
+@media (max-width: 1250px) {
+  .introduction-content {
+    box-shadow: inset 0px -200px var(--color-3);
+  }
+}
+
+@media (max-width: 1180px) {
+  .introduction-content {
+    box-shadow: inset 0px -150px var(--color-3);
+  }
+
+  .introduction-content img {
+    max-width: 500px;
+  }
+
+  .introduction-content::before {
+    width: 30%;
+    height: 60%;
+  }
+
+  .introduction-content::after {
+    width: 12%;
+  }
+
+  .introduction-grid {
+    padding-top: 20px;
+    gap: 20px;
+  }
+
+  .introduction-grid h1 {
+    font-size: 3rem;
+  }
+}

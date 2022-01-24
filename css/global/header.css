@@ -83,6 +83,20 @@
     height: calc(100vh - 72px);
   }
 
+  /* .header-nav.active .btn-mobile {
+    position: relative;
+  }
+
+  .header-nav.active .btn-mobile::after {
+    content: "";
+    position: absolute;
+    background: url(../../images/icon-close.svg) no-repeat center;
+    background-color: red;
+    width: 32px;
+    height: 32px;
+    top: 0px;
+  } */
+
   .header-nav .button {
     color: var(--color-3);
     border: 3px solid var(--color-3);
