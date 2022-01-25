@@ -21,7 +21,7 @@ a.button {
   }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 900px) {
   .container {
     padding-left: 20px;
     padding-right: 20px;

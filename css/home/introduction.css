@@ -2,9 +2,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  padding: 80px 0px;
+  padding: 100px 0px;
   background-color: var(--color-p1);
-  box-shadow: inset 0px -250px var(--color-3);
+  box-shadow: inset 0px -300px var(--color-3);
   position: relative;
 }
 
@@ -36,7 +36,7 @@
   display: grid;
   align-content: flex-start;
   gap: 30px;
-  padding-top: 50px;
+  padding: 60px 0px;
   position: relative;
 }
 
@@ -139,10 +139,6 @@
     box-shadow: inset 0px -150px var(--color-3);
   }
 
-  .introduction-content img {
-    max-width: 500px;
-  }
-
   .introduction-content::before {
     width: 30%;
     height: 60%;
@@ -153,7 +149,7 @@
   }
 
   .introduction-grid {
-    padding-top: 20px;
+    padding: 20px 0px;
     gap: 20px;
   }
 
@@ -164,5 +160,67 @@
 
   .introduction-about h2 {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .introduction-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    justify-items: center;
+    align-items: center;
+    box-shadow: none;
+    text-align: center;
+    gap: 0px;
+  }
+
+  .introduction-content::after,
+  .introduction-content::before {
+    content: none;
+  }
+
+  .introduction-content picture {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    grid-row: 1;
+  }
+
+  .introduction-content.container {
+    padding: 0px 0px;
+  }
+
+  .introduction-grid {
+    max-width: 70ch;
+    justify-items: center;
+    padding: 80px 20px;
+  }
+
+  .introduction-grid::before {
+    content: "";
+    position: absolute;
+    background: url(../../images/bg-pattern-intro-left-mobile.svg) no-repeat top
+      left;
+    background-size: contain;
+    left: 0px;
+    top: 0px;
+    width: 40%;
+    height: 70%;
+  }
+
+  .introduction-grid::after {
+    content: "";
+    position: absolute;
+    background: url(../../images/bg-pattern-intro-right-mobile.svg) no-repeat
+      bottom right;
+    background-size: contain;
+    right: 0px;
+    bottom: -180px;
+    width: 40%;
+    height: 70%;
+  }
+
+  .introduction-grid h1::before {
+    content: none;
   }
 }
