@@ -2,9 +2,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  padding: 100px 0px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   background-color: var(--color-p1);
-  box-shadow: inset 0px -300px var(--color-3);
+  box-shadow: inset 0px -250px var(--color-3);
   position: relative;
 }
 
@@ -36,7 +37,8 @@
   display: grid;
   align-content: flex-start;
   gap: 30px;
-  padding: 60px 0px;
+  padding-top: 60px;
+  padding-bottom: 250px;
   position: relative;
 }
 
@@ -58,6 +60,12 @@
 .introduction-grid a.button:hover {
   color: var(--color-1);
   background-color: var(--color-3);
+}
+
+.img-introduction {
+  height: 100%;
+  object-position: top center;
+  object-fit: cover;
 }
 
 .introduction-information {
@@ -128,17 +136,7 @@
   background-color: var(--color-3);
 }
 
-@media (max-width: 1250px) {
-  .introduction-content {
-    box-shadow: inset 0px -200px var(--color-3);
-  }
-}
-
 @media (max-width: 1180px) {
-  .introduction-content {
-    box-shadow: inset 0px -150px var(--color-3);
-  }
-
   .introduction-content::before {
     width: 30%;
     height: 60%;
@@ -148,11 +146,6 @@
     width: 12%;
   }
 
-  .introduction-grid {
-    padding: 20px 0px;
-    gap: 20px;
-  }
-
   .introduction-grid h1,
   .introduction-information h1 {
     font-size: 3rem;
@@ -160,6 +153,24 @@
 
   .introduction-about h2 {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  .introduction-grid img {
+    height: 700px;
+  }
+
+  .introduction-content::after {
+    content: "";
+    position: absolute;
+    background: url(../../images/bg-pattern-intro-left-desktop.svg) no-repeat
+      bottom left;
+    background-size: contain;
+    left: 0px;
+    bottom: -0px;
+    width: 16%;
+    height: 100%;
   }
 }
 
@@ -191,7 +202,7 @@
   }
 
   .introduction-grid {
-    max-width: 70ch;
+    max-width: 90ch;
     justify-items: center;
     padding: 80px 20px;
   }
