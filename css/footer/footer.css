@@ -90,10 +90,6 @@ hr {
     padding-top: 100px;
   }
 
-  .footer-contact img {
-    width: 130px;
-  }
-
   .footer-contact::before {
     content: "";
     position: absolute;
@@ -103,7 +99,24 @@ hr {
     width: 100%;
     height: 50%;
     top: 0px;
-    left: 0px;
     z-index: -1;
+  }
+
+  .footer-contact img {
+    width: 130px;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 40px;
+  }
+
+  .footer-information {
+    justify-items: center;
+  }
+
+  .footer-information li {
+    text-align: center;
+    width: 100%;
   }
 }
