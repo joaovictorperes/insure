@@ -89,15 +89,20 @@
   top: 0px;
 }
 
+.introduction-information h3 {
+  font-size: 1.5rem;
+}
+
 .information-grid {
   display: grid;
-  gap: 20px;
   grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .information-grid img {
   width: 80px;
   height: 80px;
+  margin-bottom: 10px;
 }
 
 .information-items {
@@ -138,12 +143,8 @@
 
 @media (max-width: 1180px) {
   .introduction-content::before {
-    width: 30%;
+    width: 35%;
     height: 60%;
-  }
-
-  .introduction-content::after {
-    width: 12%;
   }
 
   .introduction-grid h1,
@@ -156,17 +157,11 @@
   }
 }
 
-@media (max-width: 1050px) {
-  .introduction-content::after {
-    content: "";
-    position: absolute;
-    background: url(../../images/bg-pattern-intro-left-desktop.svg) no-repeat
-      bottom left;
-    background-size: contain;
-    left: 0px;
-    bottom: -0px;
-    width: 16%;
-    height: 100%;
+@media (max-width: 900px) {
+  .introduction-content {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    box-shadow: inset 0px -180px var(--color-3);
   }
 }
 
@@ -179,6 +174,7 @@
     box-shadow: none;
     text-align: center;
     gap: 0px;
+    z-index: 1;
   }
 
   .introduction-content::after,
@@ -188,8 +184,6 @@
 
   .introduction-content picture {
     width: 100%;
-    height: auto;
-    object-fit: contain;
     grid-row: 1;
   }
 
@@ -209,10 +203,11 @@
     background: url(../../images/bg-pattern-intro-left-mobile.svg) no-repeat top
       left;
     background-size: contain;
-    left: 0px;
     top: 0px;
+    left: 0px;
     width: 40%;
     height: 70%;
+    z-index: -1;
   }
 
   .introduction-grid::after {
@@ -225,6 +220,7 @@
     bottom: -180px;
     width: 40%;
     height: 70%;
+    z-index: -2;
   }
 
   .introduction-grid h1::before {
@@ -232,21 +228,21 @@
   }
 
   .introduction-information > h2 {
+    margin-bottom: 20px;
+    margin-top: 100px;
     text-align: center;
+    position: relative;
   }
 
   .introduction-information > h2::before {
-    content: "";
-    width: 140px;
-    height: 1px;
-    background-color: var(--color-2);
-    position: absolute;
-    top: 0px;
+    top: -40px;
+    left: calc(50% - 70px);
   }
 
   .information-grid {
     grid-template-columns: 1fr;
     justify-items: center;
+    gap: 50px;
   }
 
   .information-items {
@@ -262,5 +258,16 @@
     justify-items: center;
     background: var(--color-p1)
       url(../../images/bg-pattern-how-we-work-mobile.svg) no-repeat top right;
+  }
+}
+
+@media (max-width: 350px) {
+  .introduction-grid h1,
+  .introduction-information > h2 {
+    font-size: 2.5rem;
+  }
+
+  .introduction-about {
+    padding: 60px 20px;
   }
 }
