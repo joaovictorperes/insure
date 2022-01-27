@@ -76,3 +76,34 @@ hr {
 .attribution a:hover {
   color: rgb(41, 41, 94);
 }
+
+@media (max-width: 600px) {
+  .footer::before {
+    content: none;
+  }
+
+  .footer-contact {
+    display: grid;
+    gap: 30px;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 100px;
+  }
+
+  .footer-contact img {
+    width: 130px;
+  }
+
+  .footer-contact::before {
+    content: "";
+    position: absolute;
+    background: url(../../images/bg-pattern-footer-mobile.svg) no-repeat top
+      left;
+    background-size: contain;
+    width: 100%;
+    height: 50%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+  }
+}
