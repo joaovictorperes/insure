@@ -253,4 +253,14 @@
     justify-items: center;
     text-align: center;
   }
+
+  .introduction-about {
+    display: grid;
+    gap: 40px;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    background: var(--color-p1)
+      url(../../images/bg-pattern-how-we-work-mobile.svg) no-repeat top right;
+  }
 }
