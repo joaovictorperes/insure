@@ -1,7 +1,7 @@
 .introduction-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 20px;
   padding-top: 100px;
   padding-bottom: 120px;
   background-color: var(--color-p1);

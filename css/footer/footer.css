@@ -70,11 +70,11 @@ hr {
 }
 
 .attribution a {
-  color: rgb(56, 56, 207);
+  color: rgb(115, 115, 226);
 }
 
 .attribution a:hover {
-  color: rgb(41, 41, 94);
+  color: var(--color-p2);
 }
 
 @media (max-width: 600px) {

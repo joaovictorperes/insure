@@ -34,7 +34,6 @@
 
 .btn-mobile {
   display: none;
-  cursor: pointer;
 }
 
 @media (max-width: 1250px) {
@@ -83,7 +82,7 @@
     height: calc(100vh - 72px);
   }
 
-  /* .header-nav.active .btn-mobile {
+  .header-nav.active .btn-mobile {
     position: relative;
   }
 
@@ -95,7 +94,8 @@
     width: 32px;
     height: 32px;
     top: 0px;
-  } */
+    right: 0px;
+  }
 
   .header-nav .button {
     color: var(--color-3);
@@ -110,5 +110,9 @@
 
   .btn-mobile {
     display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0px;
   }
 }
