@@ -15,15 +15,12 @@
 
 </h1>
 
-</br>
-
 # Processo
 
 <p>A tipografia utilizada para parágrafos foi <strong>"Karla"</strong> e para títulos <strong>"DM Serif Display"</strong>. </p>
 <p>O site foi construído de acordo com as Landmarks do HTML <strong>header</strong>, <strong>main</strong>, <strong>section</strong> e <strong>articles</strong> e por fim o <strong>footer</strong>. A parte responsiva foi feita após a finalização do site para tamanhos de tela de desktops. Algumas dificuldades surgiram ao deixar o site responsivo para dispositivos mobile, principalmente ao ajustar imagens e menu de navegação. A situação foi resolvida ao serem adicionados media queries.</p>
 <p>O CSS foi dividido em arquivos na pasta <strong>style</strong> com os respectivos nomes dos blocos em que aplicam os estilos. Tanto a tipografia, como as variáveis de cores foram colocadas em arquivos separados para melhor organização. O layout do site foi contruído de acordo com as imagens da pasta <strong>design</strong>.</p>
 <p>As otimizações ao final do projeto foram feitas acompanhando a avaliação da ferramenta <strong>Lighthouse</strong> do Google Chrome. Nesse projeto a acessibilidade e semântica do site foram melhor desenvolvidos, incluindo <strong>aria-label</strong>, descrição de imagens utilizando o atributo <strong>alt</strong>, etc.</p>
-</br>
 </br>
 
 # Tecnologias
@@ -36,7 +33,6 @@
   <li>JavaScript</li>
 </ul>
 
-</br>
 </br>
 
 # Aprendizados
@@ -53,7 +49,6 @@
   <li>Alteração de atributos de tags no HTML com JavaScript de acordo com ações do usuário</li>
 </ul>
 
-</br>
 </br>
 
 # Final
