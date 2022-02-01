@@ -53,4 +53,4 @@
 
 # Final
 
-<p>O projeto está em desenvolvimento... </p>
+<p>O projeto foi finalizado. Para verificar o resultado final acesse: <a href="https://sunnyside-kohl.vercel.app/" >https://insure-red.vercel.app/</a></p>
